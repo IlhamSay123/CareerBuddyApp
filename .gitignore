@@ -19,6 +19,11 @@ career_buddy_files/
 .env
 .env.*
 
+# ---- Tauri updater signing keys (NEVER commit the private key) ----
+*.key
+*.key.pub
+.tauri/
+
 # ---- Python (legacy prototype, if kept) ----
 __pycache__/
 *.pyc

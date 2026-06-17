@@ -13,6 +13,7 @@ import { Notepad } from "./screens/Notepad";
 import { AIBuddy } from "./screens/AIBuddy";
 import { CoverLetter } from "./screens/CoverLetter";
 import { Onboarding } from "./screens/Onboarding";
+import { UpdateBanner } from "./UpdateBanner";
 import { useApp } from "./store";
 import { getSetting } from "../lib/db";
 import { ensureNotificationPermission, runReminderCheck } from "../services/reminders";
@@ -119,6 +120,7 @@ export function App() {
       </main>
 
       {onboarded === false && <Onboarding onDone={() => setOnboarded(true)} />}
+      <UpdateBanner />
     </motion.div>
   );
 }

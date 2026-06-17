@@ -46,6 +46,7 @@
   "bundle": {
     "active": true,
     "targets": ["nsis"],
+    "createUpdaterArtifacts": true,
     "publisher": "CareerBuddy",
     "copyright": "© 2026 CareerBuddy",
     "category": "Productivity",
@@ -59,5 +60,12 @@
       "icons/icon.ico"
     ]
   },
-  "plugins": {}
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/IlhamSay123/CareerBuddyApp/releases/latest/download/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEM0Nzg0QzFFMTBBMTNBQ0QKUldUTk9xRVFIa3g0eEw4OFdaeTRSTEp6SDRWWDNqa2thWnpNbCtqLzF1N2F6d1l0dG5EMUlFVjkK"
+    }
+  }
 }
