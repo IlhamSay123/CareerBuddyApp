@@ -1,0 +1,12 @@
+# Normalize line endings (stops the CRLF/LF warnings) — store as LF in the repo.
+* text=auto eol=lf
+
+# Treat these as binary so Git never tries to normalize them.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.icns binary
+*.pdf binary
