@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+
+# frontend build
+dist/
+
+# rust / tauri build artifacts
+src-tauri/target/
+src-tauri/gen/
+
+# generated icons (regenerate with `npm run tauri icon`)
+# src-tauri/icons/
+
+# misc
+.DS_Store
+*.log

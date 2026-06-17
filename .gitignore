@@ -1,0 +1,31 @@
+# ---- Node / frontend ----
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ---- Rust / Tauri ----
+target/
+gen/
+
+# ---- Generated icon source (regenerate with `npm run tauri icon`) ----
+icon-square.png
+
+# ---- Local data / secrets (never commit) ----
+*.db
+*.sqlite
+*.sqlite3
+career_buddy_files/
+.env
+.env.*
+
+# ---- Python (legacy prototype, if kept) ----
+__pycache__/
+*.pyc
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
